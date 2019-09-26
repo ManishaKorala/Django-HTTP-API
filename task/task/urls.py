@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import include, path
 
 
+# Project Root URLs
 urlpatterns = [
-    path('dataset/', include('dataset.urls')),
     path('admin/', admin.site.urls),
+    path('dataset/', include('dataset.urls')),
 ]
