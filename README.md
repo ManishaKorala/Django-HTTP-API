@@ -7,12 +7,11 @@
 
 ```
 pip install -r requirements.txt
-
 ```
 use this command to install the requirements for this project.
 
 ## Create DB
-1. To create DB, change the USER and PASSWORD fields in the settings.py file (located at: AdjustTask -> task -> settings.py)  
+1. To create DB, change the USER and PASSWORD fields in the settings.py file (located at: AdjustTask ->  task -> task -> settings.py)  
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -29,7 +28,6 @@ DATABASES = {
 ```
 python manage.py makemigrations dataset
 python manage.py migrate
-
 ```
 
 At this point, your tables should have been created in the DB. 
@@ -40,11 +38,10 @@ Use this command to start the application.
 
 ```
 python manage.py runserver
-
 ```
-The application will be running on ```http://127.0.0.1:8000/dataset``` . Displaying a Welcome Message. 
+The application will be running on http://127.0.0.1:8000/dataset . Displaying a Welcome Message. 
 
-1. Load the CSV data into DB using ```http://127.0.0.1:8000/dataset/load_data``` URL. 
+1. Read and Load the CSV data into DB using http://127.0.0.1:8000/dataset/load_data URL. 
 
 
 To see the Results of Use Cases:
@@ -53,10 +50,10 @@ To see the Results of Use Cases:
 sorted by clicks in descending order. Use ```http://127.0.0.1:8000/dataset/get_data?attrs=impressions``` URL
 
 3. Show the number of installs that occurred in May of 2017 on iOS, broken down by date, sorted by date in ascending order.
-Use ```http://127.0.0.1:8000/dataset/get_data?attrs=installs``` URL
+Use http://127.0.0.1:8000/dataset/get_data?attrs=installs URL
 
 4. Show revenue, earned on June 1, 2017 in US, broken down by operating system and sorted by revenue in descending order.
-Use ```http://127.0.0.1:8000/dataset/get_data?attrs=revenue``` URL
+Use http://127.0.0.1:8000/dataset/get_data?attrs=revenue URL
 
 5. Show CPI and spend for Canada (CA) broken down by channel ordered by CPI in descending order. 
-Use ```http://127.0.0.1:8000/dataset/get_data?attrs=cpi``` URL
+Use http://127.0.0.1:8000/dataset/get_data?attrs=cpi URL
