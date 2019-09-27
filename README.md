@@ -12,6 +12,7 @@ use this command to install the requirements for this project.
 
 ## Create DB
 1. To create DB, change the USER and PASSWORD fields in the settings.py file (located at: AdjustTask ->  task -> task -> settings.py)  
+```
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -22,7 +23,7 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-
+```
 2. Use the script adjust.sql to create the Database. Then run the following migrations to create table in the Database.
 
 ```
